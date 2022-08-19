@@ -1,0 +1,82 @@
+:root {
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+    --Transparent-white: hsla(0, 0%, 100%, 0.75);
+    --Very-light-gray: hsl(0, 0%, 95%);
+}
+body{
+    font-family: 'Lexend Deca', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+    min-height: 100vh;
+    background-color: var(--Very-light-gray);
+}
+.parent .boxes {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(275px , 1fr));
+    padding: 20px;
+}
+.parent .box {
+    padding: 50px;
+}
+.parent .box h1{
+    font-family: 'Big Shoulders Display', cursive;
+    color: var(--Very-light-gray) ;
+    font-weight: 400;
+    font-size: 40px;
+}
+.parent .box p {
+    color: var(--Transparent-white);
+    line-height: 2;
+    font-size: 15px;
+    padding-right: 30px;
+}
+.parent .box button {
+    border: none;
+    margin-top: 100px;
+    font-size: 18px;
+    background-color: var(--Very-light-gray);
+    padding: 15px 40px;
+    border-radius: 30px;
+    cursor: pointer;
+    border: 2px solid var(--Very-light-gray);
+    transition: 0.3s;
+}
+.parent .box button:hover {
+    color: var(--Transparent-white);
+}
+.parent .box-one {
+    background-color: var(--Bright-orange);
+}
+.parent .box-one button {
+    color: var(--Bright-orange);
+}
+.parent .box-one button:hover {
+    background-color: var(--Bright-orange);
+}
+.parent .box-two {
+    background-color: var(--Dark-cyan);
+}
+.parent .box-two button {
+    color: var(--Dark-cyan);
+}
+.parent .box-two button:hover {
+    background-color: var(--Dark-cyan);
+}
+.parent .box-three {
+    background-color: var(--Very-dark-cyan);
+}
+.parent .box-three button {
+    color: var(--Very-dark-cyan);
+}
+.parent .box-three button:hover {
+    background-color: var(--Very-dark-cyan);
+}
