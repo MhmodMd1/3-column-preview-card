@@ -55,6 +55,7 @@ body{
 }
 .parent .box-one {
     background-color: var(--Bright-orange);
+    border-radius: 14px 0 0 14px;
 }
 .parent .box-one button {
     color: var(--Bright-orange);
@@ -73,6 +74,7 @@ body{
 }
 .parent .box-three {
     background-color: var(--Very-dark-cyan);
+    border-radius: 0 14px  14px 0;   
 }
 .parent .box-three button {
     color: var(--Very-dark-cyan);
